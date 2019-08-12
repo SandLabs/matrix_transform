@@ -46,6 +46,7 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
+test-reports/
 
 # Translations
 *.mo
@@ -53,8 +54,9 @@ coverage.xml
 
 # Django stuff:
 *.log
+.static_storage/
+.media/
 local_settings.py
-db.sqlite3
 
 # Flask stuff:
 instance/
@@ -102,3 +104,26 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Complexity
+output/*.html
+output/*/index.html
+
+# IDE
+.idea/
+.vscode/
+
+# DB
+*.sqlite
+*.rdb
+
+*.service
+!*.example
+
+# Cookiecutter
+output/

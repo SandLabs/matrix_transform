@@ -1,2 +1,3 @@
-# matrix-transform
-Only skimage.transform module
+# matrix_transform
+
+scikit-image geometric transform module, no extra shit

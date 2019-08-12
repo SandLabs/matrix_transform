@@ -1,0 +1,48 @@
+output-format: grouped
+
+autodetect: false
+strictness: veryhigh
+doc-warnings: false
+test-warnings: true
+max-line-length: 120
+
+ignore-paths:
+    - node_modules
+    - venv
+    - env
+    - .venv
+    - .env
+    - alembic
+    - migrations
+
+pep8:
+    full: true
+    disable:
+        - D100
+        - D101
+        - D102
+        - D103
+        - D105
+        - D205
+        - D400
+        - N802
+
+pylint:
+    disable:
+        - too-few-public-methods
+        - invalid-name
+        - no-self-use
+        - no-member
+        - ungrouped-imports
+        - redefined-outer-name
+
+mccabe:
+    disable:
+        - MC0001
+
+pyflakes:
+    disable:
+        - F999
+
+dodgy:
+    run: false
