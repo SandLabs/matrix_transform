@@ -3,7 +3,7 @@ import math
 import textwrap
 
 import numpy as np
-from scipy import linalg, spatial
+from scipy import spatial
 
 from .utils import get_bound_method_class, safe_as_int
 
@@ -117,7 +117,9 @@ def _umeyama(src, dst, estimate_scale):
 
     T = np.eye(dim + 1, dtype=np.double)
 
-    U, S, V = linalg.svd(A)
+    U, S, V = np.linalg.svd(A)
+    if np.isnan(U).any():
+        U, S, V = np.linalg.svd(A)
 
     # Eq. (40) and (43).
     rank = np.linalg.matrix_rank(A)

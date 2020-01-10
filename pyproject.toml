@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "matrix_transform"
-version = "1.0.1"
+version = "1.0.2"
 description = "scikit-image geometric transform module, no extra shit"
 authors = ["m.shlyamov <m.shlyamov@yandex.com>"]
 homepage = "https://github.com/SandLabs/matrix_transform"
